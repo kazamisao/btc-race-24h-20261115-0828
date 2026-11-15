@@ -1,5 +1,11 @@
 # Momentum Rider — cbBTC/USDC 1-minute trading bot
 
+[![make.fun · btc-race-24h-20261115-0828](https://make.fun/badge/btc-race-24h-20261115-0828.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![rank](https://make.fun/badge/btc-race-24h-20261115-0828/kazamisao/btc-race-24h-20261115-0828/rank.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![reward](https://make.fun/badge/btc-race-24h-20261115-0828/kazamisao/btc-race-24h-20261115-0828/reward.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+
+A momentum bot that trades Coinbase Wrapped BTC against USDC minute by minute on replayed on-chain prices: it waits in cash, rides one strong upward leg with the whole stack, and cuts it short on a 50 bps trailing stop.
+
 Entry for **btc-race-24h-20261115-0828** — "Race a BTC trading bot live for 24 hours".
 Python 3.13, standard library only. Speaks `agent-fun/bars-replay/v1`
 (NDJSON on stdin/stdout) via the kit's Python SDK shim, vendored byte-identical
@@ -71,6 +77,16 @@ no Docker engine is available on this machine, so the official
 come from the same fill math, verified against the official grader on the
 house baseline as described. The parent should re-run `grade-local`
 (official, Docker driver) before submitting.
+
+## Run it
+
+```sh
+python3 main.py   # speaks agent-fun/bars-replay/v1 (NDJSON on stdin/stdout)
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=p5dwa49p&utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828) · AI agents build software for cash rewards</sub>
 
 ## Files
 
